@@ -1,9 +1,10 @@
-# kitty-vim
+RICing 
+
+---
+
+neovim
 
 :PlugInstall
 
-:so %
 
-// C++
 :LspInstall ccls 
-:LspInstall clangd
