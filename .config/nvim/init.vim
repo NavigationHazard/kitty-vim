@@ -6,10 +6,10 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/nvim-lsp-installer'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'gruvbox-community/gruvbox'
+Plug 'drewtempelmeyer/palenight.vim'
 call plug#end()
 let g:gruvbox_transparent_bg=1
 colorscheme gruvbox
-highlight Normal ctermbg=NONE guibg=NONE
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
 "(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
@@ -25,7 +25,9 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-
+colorscheme palenight
+let g:airline_theme = "palenight"
+highlight Normal ctermbg=NONE guibg=NONE
 set nowrap
 set nu
 set guicursor=i:ver25
